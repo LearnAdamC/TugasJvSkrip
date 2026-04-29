@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Tasks</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0d1117;
+            color: #e6edf3;
+            font-family: 'Segoe UI', sans-serif;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 8px;
+            color: #58a6ff;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #8b949e;
+            margin-bottom: 40px;
+            font-size: 0.95rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 16px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 10px;
+            padding: 20px;
+            text-decoration: none;
+            color: inherit;
+            transition: border-color 0.2s, transform 0.2s, background-color 0.2s;
+            display: block;
+        }
+
+        .card:hover {
+            border-color: #58a6ff;
+            background-color: #1c2330;
+            transform: translateY(-3px);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 10px;
+        }
+
+        .badge {
+            background-color: #21262d;
+            border: 1px solid #30363d;
+            color: #58a6ff;
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 3px 10px;
+            border-radius: 20px;
+            white-space: nowrap;
+        }
+
+        .card-title {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #e6edf3;
+        }
+
+        .card-desc {
+            font-size: 0.82rem;
+            color: #8b949e;
+            line-height: 1.5;
+        }
+
+        .tag {
+            display: inline-block;
+            margin-top: 10px;
+            background-color: #0d2137;
+            color: #58a6ff;
+            font-size: 0.72rem;
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+
+        .tag.duo {
+            background-color: #1a2e1a;
+            color: #3fb950;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>JavaScript Tasks</h1>
+    <p class="subtitle">Kumpulan latihan JavaScript — klik task untuk membuka</p>
+
+    <div class="grid">
+
+        <a class="card" href="task02.html">
+            <div class="card-header">
+                <span class="badge">Task 02</span>
+            </div>
+            <div class="card-title">Alert Dialog</div>
+            <div class="card-desc">Menampilkan pesan alert ke pengguna menggunakan <code>alert()</code>.</div>
+            <span class="tag">dialog</span>
+        </a>
+
+        <a class="card" href="task03.html">
+            <div class="card-header">
+                <span class="badge">Task 03</span>
+            </div>
+            <div class="card-title">External JavaScript File</div>
+            <div class="card-desc">Memanggil file JS eksternal dari HTML menggunakan tag <code>&lt;script src&gt;</code>.</div>
+            <span class="tag">js file</span>
+            <span class="tag duo">html + js</span>
+        </a>
+
+        <a class="card" href="task10.html">
+            <div class="card-header">
+                <span class="badge">Task 10</span>
+            </div>
+            <div class="card-title">Variabel & Console Log</div>
+            <div class="card-desc">Deklarasi variabel dan menampilkan nilai ke konsol dengan <code>console.log()</code>.</div>
+            <span class="tag">variabel</span>
+        </a>
+
+        <a class="card" href="task11.html">
+            <div class="card-header">
+                <span class="badge">Task 11</span>
+            </div>
+            <div class="card-title">Confirm Dialog</div>
+            <div class="card-desc">Menampilkan dialog konfirmasi menggunakan <code>confirm()</code>.</div>
+            <span class="tag">dialog</span>
+        </a>
+
+        <a class="card" href="task12.html">
+            <div class="card-header">
+                <span class="badge">Task 12</span>
+            </div>
+            <div class="card-title">Prompt Dialog</div>
+            <div class="card-desc">Mengambil input dari pengguna menggunakan <code>prompt()</code>.</div>
+            <span class="tag">input</span>
+        </a>
+
+        <a class="card" href="task13.html">
+            <div class="card-header">
+                <span class="badge">Task 13</span>
+            </div>
+            <div class="card-title">If / Else — Genap & Ganjil</div>
+            <div class="card-desc">Mengecek apakah sebuah angka genap atau ganjil menggunakan <code>if/else</code>.</div>
+            <span class="tag">kondisi</span>
+        </a>
+
+        <a class="card" href="task14.html">
+            <div class="card-header">
+                <span class="badge">Task 14</span>
+            </div>
+            <div class="card-title">Validasi Login</div>
+            <div class="card-desc">Validasi ID dan password menggunakan percabangan <code>if/else if/else</code>.</div>
+            <span class="tag">kondisi</span>
+        </a>
+
+        <a class="card" href="task15.html">
+            <div class="card-header">
+                <span class="badge">Task 15</span>
+            </div>
+            <div class="card-title">Ternary Operator</div>
+            <div class="card-desc">Menyederhanakan kondisi if/else menggunakan operator ternary <code>? :</code>.</div>
+            <span class="tag">kondisi</span>
+        </a>
+
+        <a class="card" href="task16.html">
+            <div class="card-header">
+                <span class="badge">Task 16</span>
+            </div>
+            <div class="card-title">While Loop — Counter</div>
+            <div class="card-desc">Perulangan dengan <code>while</code> untuk mencetak angka 0 sampai 4.</div>
+            <span class="tag">loop</span>
+        </a>
+
+        <a class="card" href="task17.html">
+            <div class="card-header">
+                <span class="badge">Task 17</span>
+            </div>
+            <div class="card-title">While Loop — Penjumlahan</div>
+            <div class="card-desc">Input 10 angka dari pengguna lalu hitung totalnya menggunakan <code>while</code>.</div>
+            <span class="tag">loop</span>
+        </a>
+
+        <a class="card" href="task18.html">
+            <div class="card-header">
+                <span class="badge">Task 18</span>
+            </div>
+            <div class="card-title">While Loop — Sentinel Value</div>
+            <div class="card-desc">Input angka terus-menerus hingga user memasukkan nilai <code>-1</code>.</div>
+            <span class="tag">loop</span>
+        </a>
+
+        <a class="card" href="task19.html">
+            <div class="card-header">
+                <span class="badge">Task 19</span>
+            </div>
+            <div class="card-title">For Loop</div>
+            <div class="card-desc">Mencetak angka 1 sampai 10 menggunakan <code>for</code> loop.</div>
+            <span class="tag">loop</span>
+        </a>
+
+        <a class="card" href="task20.html">
+            <div class="card-header">
+                <span class="badge">Task 20</span>
+            </div>
+            <div class="card-title">For Loop + Kondisi — Tipe Pokemon</div>
+            <div class="card-desc">Input nama Pokemon lalu tampilkan tipe-nya menggunakan loop dan kondisi.</div>
+            <span class="tag">loop</span>
+            <span class="tag">kondisi</span>
+        </a>
+
+        <a class="card" href="task21.html">
+            <div class="card-header">
+                <span class="badge">Task 21</span>
+            </div>
+            <div class="card-title">Array — Kategorisasi Pokemon</div>
+            <div class="card-desc">Memasukkan nama Pokemon ke dalam array berdasarkan tipe menggunakan <code>[]</code>.</div>
+            <span class="tag">array</span>
+        </a>
+
+        <a class="card" href="task22.html">
+            <div class="card-header">
+                <span class="badge">Task 22</span>
+            </div>
+            <div class="card-title">Math.random()</div>
+            <div class="card-desc">Menghasilkan bilangan acak menggunakan <code>Math.random()</code>.</div>
+            <span class="tag">math</span>
+        </a>
+
+        <a class="card" href="task23.html">
+            <div class="card-header">
+                <span class="badge">Task 23</span>
+            </div>
+            <div class="card-title">Simulasi Dadu</div>
+            <div class="card-desc">Mensimulasikan lempar dadu 10 kali menggunakan <code>Math.floor</code> + random.</div>
+            <span class="tag">math</span>
+        </a>
+
+        <a class="card" href="task24.html">
+            <div class="card-header">
+                <span class="badge">Task 24</span>
+            </div>
+            <div class="card-title">Game Batu Gunting Kertas</div>
+            <div class="card-desc">Game melawan bot hingga salah satu mencapai 3 poin.</div>
+            <span class="tag">game</span>
+            <span class="tag">loop</span>
+        </a>
+
+        <a class="card" href="task25.html">
+            <div class="card-header">
+                <span class="badge">Task 25</span>
+            </div>
+            <div class="card-title">Function Dasar</div>
+            <div class="card-desc">Membuat dan memanggil function sederhana tanpa parameter.</div>
+            <span class="tag">function</span>
+        </a>
+
+        <a class="card" href="task26.html">
+            <div class="card-header">
+                <span class="badge">Task 26</span>
+            </div>
+            <div class="card-title">Function dengan Loop</div>
+            <div class="card-desc">Function yang berisi perulangan untuk mencetak teks 10 kali.</div>
+            <span class="tag">function</span>
+        </a>
+
+        <a class="card" href="task27.html">
+            <div class="card-header">
+                <span class="badge">Task 27</span>
+            </div>
+            <div class="card-title">Function dengan Parameter</div>
+            <div class="card-desc">Membuat function yang menerima parameter untuk mengulang kata.</div>
+            <span class="tag">function</span>
+        </a>
+
+        <a class="card" href="task28.html">
+            <div class="card-header">
+                <span class="badge">Task 28</span>
+            </div>
+            <div class="card-title">Function Expression & Return</div>
+            <div class="card-desc">Menyimpan function dalam variabel dan mengembalikan nilai dengan <code>return</code>.</div>
+            <span class="tag">function</span>
+        </a>
+
+        <a class="card" href="task30.html">
+            <div class="card-header">
+                <span class="badge">Task 30</span>
+            </div>
+            <div class="card-title">Array Push & Break</div>
+            <div class="card-desc">Menambahkan data ke array dengan <code>push()</code> dan menghentikan loop dengan <code>break</code>.</div>
+            <span class="tag">array</span>
+        </a>
+
+        <a class="card" href="task31.html">
+            <div class="card-header">
+                <span class="badge">Task 31</span>
+            </div>
+            <div class="card-title">Array Join</div>
+            <div class="card-desc">Menggabungkan elemen array menjadi string menggunakan <code>join()</code>.</div>
+            <span class="tag">array</span>
+        </a>
+
+        <a class="card" href="task32.html">
+            <div class="card-header">
+                <span class="badge">Task 32</span>
+            </div>
+            <div class="card-title">Array forEach</div>
+            <div class="card-desc">Iterasi setiap elemen array menggunakan method <code>forEach()</code>.</div>
+            <span class="tag">array</span>
+        </a>
+
+        <a class="card" href="task33.html">
+            <div class="card-header">
+                <span class="badge">Task 33</span>
+            </div>
+            <div class="card-title">forEach + Cek Genap/Ganjil</div>
+            <div class="card-desc">Mengecek setiap elemen array apakah genap atau ganjil menggunakan <code>forEach</code>.</div>
+            <span class="tag">array</span>
+            <span class="tag">kondisi</span>
+        </a>
+
+        <a class="card" href="task34.html">
+            <div class="card-header">
+                <span class="badge">Task 34</span>
+            </div>
+            <div class="card-title">Array Map — Kalikan 2</div>
+            <div class="card-desc">Mengalikan setiap elemen array dengan 2 menggunakan method <code>map()</code>.</div>
+            <span class="tag">array</span>
+        </a>
+
+        <a class="card" href="task35.html">
+            <div class="card-header">
+                <span class="badge">Task 35</span>
+            </div>
+            <div class="card-title">Array Map dengan Kondisi</div>
+            <div class="card-desc">Menggunakan <code>map()</code> dengan kondisi untuk memfilter bilangan ganjil.</div>
+            <span class="tag">array</span>
+            <span class="tag">kondisi</span>
+        </a>
+
+        <a class="card" href="task36.html">
+            <div class="card-header">
+                <span class="badge">Task 36</span>
+            </div>
+            <div class="card-title">Object & Array</div>
+            <div class="card-desc">Membuat object Pokemon lalu menyimpannya dalam array dan iterasi dengan <code>forEach</code>.</div>
+            <span class="tag">object</span>
+            <span class="tag">array</span>
+        </a>
+
+        <a class="card" href="task37.html">
+            <div class="card-header">
+                <span class="badge">Task 37</span>
+            </div>
+            <div class="card-title">DOM — Input & Tampilkan Nama</div>
+            <div class="card-desc">Mengambil nilai input dari form dan menampilkannya ke halaman menggunakan DOM.</div>
+            <span class="tag">DOM</span>
+        </a>
+
+        <a class="card" href="task38.html">
+            <div class="card-header">
+                <span class="badge">Task 38</span>
+            </div>
+            <div class="card-title">DOM — Form Registrasi</div>
+            <div class="card-desc">Form registrasi lengkap dengan validasi kesesuaian password menggunakan DOM.</div>
+            <span class="tag">DOM</span>
+            <span class="tag">form</span>
+        </a>
+
+    </div>
+
+</body>
+</html>
