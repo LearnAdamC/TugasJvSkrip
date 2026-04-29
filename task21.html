@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+
+    <body>
+        <script type="text/javascript">
+            const listrik = [];
+            const air = [];
+            const no_data = [];
+
+            for(var counter = 1; counter <= 3; counter++){
+                var nama = prompt('Nama pokemon')
+                
+                if(nama == "pikachu" | nama == 'raichu' | nama == 'elekid'){
+                    listrik[counter] = nama;
+                } else if (nama == "squirtle" | nama == 'lapras' | nama == 'greninja'){
+                    air[counter] = nama;
+                } else {
+                    no_data[counter] = nama;
+                }
+            }
+
+            console.log('list electric: ' + listrik)
+            console.log('list air: ' + air)
+            console.log('list no_data: ' + no_data)
+        </script>
+    </body>
+</html>

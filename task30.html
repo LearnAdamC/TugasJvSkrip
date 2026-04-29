@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+
+    <body>
+        <script type="text/javascript">
+            
+            var j_buah = [];
+            var buah;
+
+            while(true){
+                buah = prompt('masukkan nama buah')
+
+                if (buah == 'stop'){
+                    break;
+                }
+
+                j_buah.push(buah)
+            }
+
+            for(var i = 0; i < j_buah.length; i++){
+                console.log(j_buah[i])
+            }
+        </script>
+    </body>
+</html>

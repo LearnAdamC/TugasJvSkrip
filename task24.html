@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+
+    <body>
+        <script type="text/javascript">
+            var pilihan = ['gunting', 'batu', 'kertas'];
+            var aaron = 0;
+            var nathan = 0;
+            var match = 3;
+
+            while(aaron < match || nathan < match){
+                var radn = Math.floor(Math.random() * 3)
+                var r_nathan = pilihan[radn];
+                var r_aaron = prompt('Masukkan pilihan anda - gunting, batu, kertas')
+
+                if (r_aaron == r_nathan){
+                    console.log('draw, score: aaron ' + aaron + ' dan nathan ' + nathan)
+                } else if ( r_aaron == 'gunting' & r_nathan == 'kertas' || r_aaron == 'kertas' & r_nathan == 'batu' || r_aaron == 'batu' & r_nathan == 'gunting'){
+                    aaron++;
+                    console.log(console.log('aaron menang,  score aaron ' + aaron + ' dan nathan ' + nathan))
+                } else {
+                    nathan++;
+                    console.log(console.log('nathan menang,  score aaron ' + aaron + ' dan nathan ' + nathan))
+                }
+            }
+
+            if (aaron == match){
+                console.log('aaron (user) win!')
+            } else if (nathan == match){
+                console.log('nathan (bot) win!')
+            } else {
+                console.log('err sistem error!')
+            }
+        </script>
+    </body>
+</html>

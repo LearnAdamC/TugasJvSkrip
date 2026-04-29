@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <p>First Name</p>
+        <input type="text" id="fname">
+
+        <p>Last Name</p>
+        <input type="text" id="lname">
+
+        <p>Email</p>
+        <input type="text" id="email">
+
+        <p>Password</p>
+        <input type="password" id="pass">
+
+        <p>Confirm Password</p>
+        <input type="password" id="cpass">
+
+        <br><br>
+        <button onclick="create()">Create</button>
+
+        <div id="output"></div>
+
+        <script type="text/javascript">
+            function create() {
+                var fname = document.getElementById("fname").value;
+                var lname = document.getElementById("lname").value;
+                var email = document.getElementById("email").value;
+                var pass = document.getElementById("pass").value;
+                var cpass = document.getElementById("cpass").value;
+                var status = "";
+
+                if (pass === cpass) {
+                    status = "Password sama";
+                } else {
+                    status = "Password tidak sama";
+                }
+
+                document.getElementById("output").innerHTML =   "Nama: " + fname + " " + lname + "<br>" + "Email: " + email + "<br>" + status;
+            }
+        </script>
+
+    </body>
+</html>

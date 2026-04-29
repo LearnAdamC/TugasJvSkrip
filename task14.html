@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+
+    <body>
+        <script type="text/javascript">
+            var id = prompt('Masukkan ID')
+            var passw = prompt('Masukkan Password')
+
+            if (id != 'admin' & passw != 'pass'){
+                window.alert('ID dan Password salah.')
+                console.log('login false')
+            } else if (id == 'admin' & passw != 'pass'){
+                window.alert('Password salah.')
+                console.log('login false')
+            } else if (id != 'admin' & passw == 'pass'){
+                window.alert('ID salah.')
+                console.log('login false')
+            } else {
+                window.alert('id dan password anda benar.')
+                console.log('login true')
+            }
+            1
+        </script>
+    </body>
+</html>
