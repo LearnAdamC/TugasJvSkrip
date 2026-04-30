@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+
+    <body>
+
+        <div id="time">--:--:--</div>
+
+        <button onclick="start()">Start</button>
+        <button onclick="stop()">Stop</button>
+        <button onclick="reset()">Reset</button>
+
+        <script type="text/javascript">
+            var angka = 0;
+            var timer;
+
+            function start() {
+                timer = setInterval(function() {
+                    angka++;
+
+                    var jam = Math.floor(angka / 3600);
+                    var menit = Math.floor((angka % 3600) / 60);
+                    var detik = angka % 60;
+
+                    if (jam < 10) {
+                        jam = "0" + jam;
+                    }
+
+                    if (menit < 10) {
+                        menit = "0" + menit;
+                    }
+
+                    if (detik < 10) {
+                        detik = "0" + detik;
+                    }
+
+                    document.getElementById("time").innerHTML =
+                        jam + ":" + menit + ":" + detik;
+
+                }, 1000);
+            }
+
+            function stop() {
+                clearInterval(timer);
+            }
+
+            function reset() {
+                angka = 0;
+                document.getElementById("time").innerHTML = "00:00:00";
+            }
+        </script>
+
+    </body>
+</html>

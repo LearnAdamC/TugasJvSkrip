@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+
+    <body>
+
+        <h3 id="captcha"></h3>
+
+        <input type="text" id="jawaban">
+        <button onclick="cek()">Submit</button>
+
+        <p id="hasil"></p>
+
+        <script type="text/javascript">
+            var angka = [
+                "0","1","2","3","4","5","6","7","8","9"
+            ];
+
+            var a, b, op, hasilBenar;
+
+            function generate() {
+                var i1 = Math.floor(Math.random() * angka.length);
+                var i2 = Math.floor(Math.random() * angka.length);
+                a = parseInt(angka[i1]);
+                b = parseInt(angka[i2]);
+                var ops = ["+", "-"];
+                var iop = Math.floor(Math.random() * ops.length);
+                op = ops[iop];
+
+                if (op == "+") {
+                    hasilBenar = a + b;
+                } else {
+                    hasilBenar = a - b;
+                }
+
+                document.getElementById("captcha").innerHTML =
+                    a + " " + op + " " + b;
+            }
+
+            function cek() {
+                var input = document.getElementById("jawaban").value;
+                if (parseInt(input) === hasilBenar) {
+                    document.getElementById("hasil").innerHTML = "benar!";
+                } else {
+                    document.getElementById("hasil").innerHTML = "salah!";
+                }
+            }
+
+            generate();
+        </script>
+
+    </body>
+</html>

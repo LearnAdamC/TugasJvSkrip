@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+
+    <body>
+
+        <img id="gambar" width="300">
+
+        <button onclick="mundur()">Mundur</button>
+        <button onclick="maju()">Maju</button>
+
+        <script type="text/javascript">
+            var images = [
+                "https://picsum.photos/id/101/300/200",
+                "https://picsum.photos/id/102/300/200",
+                "https://picsum.photos/id/103/300/200"
+            ];
+
+            var index = 0;
+            document.getElementById("gambar").src = images[index];
+
+            function maju() {
+                index++;
+
+                if (index >= images.length) {
+                    index = 0;
+                }
+
+                document.getElementById("gambar").src = images[index];
+            }
+
+            function mundur() {
+                index--;
+
+                if (index < 0) {
+                    index = images.length - 1;
+                }
+
+                document.getElementById("gambar").src = images[index];
+            }
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+
+    <body>
+
+        <div id="jams"></div>
+
+        <script type="text/javascript">
+            function jam() {
+                var now = new Date();
+
+                var h = now.getHours();
+                var m = now.getMinutes();
+                var s = now.getSeconds();
+h
+                document.getElementById("jams").innerHTML = "Jam: " + h + ", Menit: " + m + ", Detik: " + s;
+            }
+
+            setInterval(jam, 1000);
+        </script>
+
+    </body>
+</html>
